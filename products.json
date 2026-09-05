@@ -1,0 +1,57 @@
+[
+    {
+        "id": "potato-plain",
+        "name": "Potato (Plain)",
+        "greenspk_price": 90,
+        "govt_price": 100,
+        "grocer_price": 120,
+        "qty": 1,
+        "uom": "KG",
+        "in_stock": true,
+        "img": ""
+    },
+    {
+        "id": "onion-dry",
+        "name": "Onion (Dry)",
+        "greenspk_price": 90,
+        "govt_price": 100,
+        "grocer_price": 120,
+        "qty": 1,
+        "uom": "KG",
+        "in_stock": true,
+        "img": ""
+    },
+    {
+        "id": "mint",
+        "name": "Mint",
+        "greenspk_price": 15,
+        "govt_price": 20,
+        "grocer_price": 20,
+        "qty": 1,
+        "uom": "Bunch",
+        "in_stock": true,
+        "img": ""
+    },
+    {
+        "id": "broccoli",
+        "name": "Broccoli",
+        "greenspk_price": 180,
+        "govt_price": 200,
+        "grocer_price": 220,
+        "qty": 1,
+        "uom": "Piece",
+        "in_stock": true,
+        "img": ""
+    },
+    {
+        "id": "veg-4a83ed83",
+        "name": "veg",
+        "greenspk_price": 1,
+        "govt_price": 1,
+        "grocer_price": 1,
+        "qty": 1,
+        "uom": "KG",
+        "in_stock": true,
+        "img": "admin\/uploads\/products\/product_f279f98924bae484.jpg"
+    }
+]
