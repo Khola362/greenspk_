@@ -1,0 +1,636 @@
+:root {
+    --ink: #183328;
+    --leaf: #39734a;
+    --lime: #dbe96e;
+    --cream: #f7f6ef;
+    --orange: #e36b38;
+    --line: #dce2d7;
+    --muted: #6f7e76
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--ink);
+    background: var(--cream)
+}
+
+.admin-brand {
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--ink);
+    text-decoration: none;
+    letter-spacing: -1px
+}
+
+.admin-brand span {
+    color: var(--leaf)
+}
+
+.login-page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #eef1dc, #d5e29b)
+}
+
+.login-box {
+    background: #fffdf8;
+    width: min(440px, calc(100% - 36px));
+    padding: 46px;
+    box-shadow: 10px 10px 0 #377144
+}
+
+.login-box .admin-brand {
+    display: block;
+    margin-bottom: 52px
+}
+
+.kicker,
+.side-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--leaf);
+    margin: 0 0 10px
+}
+
+.login-box h1,
+.admin-header h1,
+h2 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: -1px;
+    margin: 0
+}
+
+.login-box h1 {
+    font-size: 42px
+}
+
+.muted,
+.panel-head p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5
+}
+
+.login-box form {
+    margin-top: 28px
+}
+
+.login-box label,
+.product-form label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 18px 0
+}
+
+.login-box input,
+.product-form input,
+.product-form select {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--line);
+    background: #fff;
+    padding: 12px;
+    margin-top: 7px;
+    font: 14px 'DM Sans';
+    color: var(--ink);
+    border-radius: 2px
+}
+
+.primary {
+    background: var(--leaf);
+    border: 0;
+    color: #fff;
+    text-decoration: none;
+    font: 600 14px 'DM Sans';
+    padding: 13px 18px;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block
+}
+
+.login-box .primary {
+    width: 100%;
+    margin-top: 10px
+}
+
+.login-hint {
+    text-align: center;
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 24px
+}
+
+.alert {
+    background: #fff0e8;
+    color: #a44420;
+    border-left: 3px solid var(--orange);
+    padding: 11px;
+    font-size: 13px;
+    margin: 18px 0
+}
+
+.admin-page {
+    display: flex;
+    min-height: 100vh
+}
+
+.sidebar {
+    width: 240px;
+    flex: none;
+    background: #173229;
+    color: #dceadd;
+    padding: 28px 17px;
+    display: flex;
+    flex-direction: column
+}
+
+.sidebar .admin-brand {
+    color: #fff;
+    padding: 0 10px
+}
+
+.side-label {
+    color: #a4bf9d;
+    margin: 52px 10px 12px
+}
+
+.sidebar nav {
+    display: block
+}
+
+.sidebar nav a {
+    display: flex;
+    color: #d5e0d7;
+    text-decoration: none;
+    padding: 12px 10px;
+    margin: 3px 0;
+    border-radius: 3px;
+    font-size: 14px;
+    gap: 12px
+}
+
+.sidebar nav a.active {
+    background: #376d49;
+    color: #fff
+}
+
+.sidebar nav a.disabled {
+    opacity: .48;
+    cursor: default
+}
+
+.sidebar em {
+    font-size: 9px;
+    font-style: normal;
+    background: #426250;
+    padding: 2px 5px;
+    border-radius: 8px;
+    margin-left: auto
+}
+
+.sidebar-foot {
+    margin-top: auto;
+    border-top: 1px solid #365346;
+    padding: 18px 10px 0;
+    font-size: 11px;
+    color: #aac0b0
+}
+
+.sidebar-foot b {
+    color: #fff;
+    font-size: 13px
+}
+
+.sidebar-foot a {
+    display: block;
+    color: var(--lime);
+    margin-top: 15px;
+    text-decoration: none
+}
+
+.admin-main {
+    width: 100%;
+    padding: 42px clamp(28px, 5vw, 80px)
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px
+}
+
+.admin-header h1 {
+    font-size: 34px
+}
+
+.view-store {
+    font-size: 13px;
+    color: var(--leaf);
+    font-weight: 700
+}
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e6edc2;
+    padding: 26px 30px;
+    margin-bottom: 24px
+}
+
+.welcome p {
+    font-size: 15px;
+    margin: 0 0 15px
+}
+
+.date-card {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 28px
+}
+
+.date-card span {
+    font-size: 11px;
+    color: var(--muted)
+}
+
+.date-card b {
+    display: block;
+    color: var(--ink);
+    font-size: 14px;
+    margin-top: 3px
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 24px
+}
+
+.stats article {
+    background: #fffdfa;
+    border: 1px solid var(--line);
+    padding: 20px;
+    display: flex;
+    gap: 13px;
+    align-items: center
+}
+
+.stat-icon {
+    width: 39px;
+    height: 39px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 20px
+}
+
+.green {
+    background: #d6ead9;
+    color: var(--leaf)
+}
+
+.lime {
+    background: #eff3bb
+}
+
+.orange {
+    background: #ffdfcb;
+    color: #b74d28
+}
+
+.stats b {
+    font-size: 24px;
+    display: block
+}
+
+.stats small {
+    font-size: 12px;
+    color: var(--muted)
+}
+
+.panel,
+.form-panel {
+    background: #fffdfa;
+    border: 1px solid var(--line);
+    padding: 28px
+}
+
+.panel-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px
+}
+
+.panel-head h2 {
+    font-size: 25px
+}
+
+.panel-head p {
+    margin: 6px 0 0
+}
+
+.panel-head>a:not(.primary) {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--leaf);
+    text-decoration: none
+}
+
+.mini-products>div {
+    display: grid;
+    grid-template-columns: 52px 1fr 140px;
+    align-items: center;
+    border-top: 1px solid var(--line);
+    padding: 10px 0;
+    position: relative
+}
+
+.product-emoji,
+.table-product i {
+    font-size: 27px;
+    font-style: normal
+}
+
+.mini-products b {
+    font-size: 14px
+}
+
+.mini-products small {
+    font-size: 12px;
+    color: var(--muted)
+}
+
+.status {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 5px 6px;
+    border-radius: 10px;
+    justify-self: end
+}
+
+.status.live {
+    color: #26713c;
+    background: #e1f2dd
+}
+
+.status.hidden {
+    color: #7c6d59;
+    background: #f2ede0
+}
+
+.blank-state {
+    text-align: center;
+    padding: 45px 15px
+}
+
+.blank-state span {
+    font-size: 45px
+}
+
+.blank-state h3 {
+    margin: 10px 0 5px
+}
+
+.blank-state p {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 20px
+}
+
+.notice {
+    background: #e1f2dd;
+    color: #286b39;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    font-size: 13px
+}
+
+.back {
+    display: block;
+    color: var(--leaf);
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-bottom: 24px
+}
+
+.product-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 20px;
+    max-width: 680px
+}
+
+.product-form .emoji-field {
+    grid-column: span 2;
+    width: 85px
+}
+
+.emoji-field input {
+    text-align: center;
+    font-size: 24px
+}
+
+.product-form .toggle {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer
+}
+
+.toggle input {
+    width: auto;
+    margin: 0;
+    accent-color: var(--leaf)
+}
+
+.form-actions {
+    grid-column: span 2;
+    border-top: 1px solid var(--line);
+    margin-top: 10px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 22px
+}
+
+.form-actions a {
+    color: var(--muted);
+    font-size: 13px;
+    text-decoration: none
+}
+
+.count {
+    font: 13px 'DM Sans';
+    background: #e6edc2;
+    border-radius: 12px;
+    padding: 3px 7px;
+    vertical-align: middle
+}
+
+.product-table {
+    border-top: 1px solid var(--line)
+
+}
+.product-table i img{
+    background-color: red;
+    /* max-height: fit-content; */
+    max-block-size: 50px;
+}
+.table-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr .8fr 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 8px;
+    border-bottom: 1px solid var(--line);
+    font-size: 13px
+}
+
+.table-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--muted);
+    font-weight: 700
+}
+
+.table-product {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    align-items: center
+}
+
+.table-product small {
+    grid-column: 2;
+    color: var(--muted);
+    font-size: 11px;
+    margin-top: -8px
+}
+
+.row-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center
+}
+
+.row-actions a,
+.row-actions button {
+    color: var(--leaf);
+    font: 600 12px 'DM Sans';
+    background: none;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.row-actions button {
+    color: #b24e2a
+}
+
+@media(max-width:760px) {
+    .sidebar {
+        width: 60px;
+        padding: 20px 8px
+    }
+
+    .sidebar .admin-brand {
+        font-size: 0;
+        padding: 0;
+        text-align: center
+    }
+
+    .sidebar .admin-brand:first-letter {
+        font-size: 22px
+    }
+
+    .side-label,
+    .sidebar nav span,
+    .sidebar-foot {
+        display: none
+    }
+
+    .sidebar nav a {
+        justify-content: center;
+        padding: 13px 2px
+    }
+
+    .admin-main {
+        padding: 28px 16px
+    }
+
+    .admin-header h1 {
+        font-size: 28px
+    }
+
+    .view-store {
+        font-size: 11px
+    }
+
+    .welcome {
+        padding: 20px;
+        display: block
+    }
+
+    .date-card {
+        margin-top: 20px
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+        gap: 10px
+    }
+
+    .panel,
+    .form-panel {
+        padding: 18px
+    }
+
+    .product-form {
+        grid-template-columns: 1fr
+    }
+
+    .product-form>* {
+        grid-column: span 1 !important
+    }
+
+    .table-row {
+        grid-template-columns: 1.6fr .8fr .8fr
+    }
+
+    .table-row>span:nth-child(2),
+    .table-row>span:nth-child(4),
+    .table-label>span:nth-child(2),
+    .table-label>span:nth-child(4) {
+        display: none
+    }
+
+    .row-actions {
+        justify-content: flex-end
+    }
+
+    .mini-products>div {
+        grid-template-columns: 45px 1fr
+    }
+
+    .mini-products .status {
+        display: none
+    }
+}
